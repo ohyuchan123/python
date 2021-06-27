@@ -1,22 +1,29 @@
 #클래스(3)
-class Tv:
-    brand_name=""
-    color=""
-    power=False
-    channel=10
-    def init(self,color,power,channel,name):
-        self.name=name
-        self.color=color
-        self.channel=channel
-        print("Tv")
-    def power(self,power):
-        not power
-    def channelUp(self,channel):
-        channel+=1
-    def channeldown(self,channel):
-        channel-=1
-samsung=Tv()
-print(samsung.init("하얀색",2,"삼성Tv"))
+#class A:
+    #빈클래스
+    #기본생성자
+    #def _init_(self):
+        #print("A")
+    #pass
+#A()
+class Account:
+    def _init_(self,name,num,money,pw):
+        self.acc_name = name
+        self.acc_num = num
+        self.acc_balance = money
+        self.acc_pw = pw
+        print("계좌 등록ok")
+    def with1(self,money):
+        if money<=self.acc_balance:
+            self.acc_balance-=money
+            return money
+        else:
+            return "잔액부족"
+    def posit(self,money):
+        self.acc_balance+=money
+        print("입금액:",money)
 
-lg=Tv()
-print(lg.init("하얀색",5,"lGTv"))
+영희=Account("영희계좌","1111",1000,1234)
+print(영희.acc_name)
+영희.posit(20000 )
+print("출금:",영희.with1(50000))
