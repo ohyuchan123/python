@@ -1,24 +1,22 @@
-#클래스(2)
-class person:
-    name=""
-    age=0
-    job=0
-    hei=0.0
-    wei=0
-    address=""
-    phone=""
-    def init(self,name,age,job,hei
-             ,wei,adress,phone):
+#클래스(3)
+class Tv:
+    brand_name=""
+    color=""
+    power=False
+    channel=10
+    def init(self,color,power,channel,name):
         self.name=name
-        self.age=age
-        self.job=job
-        self.hei=hei
-        self.wei=wei
-        self.adress=adress
-        self.phone=phone
-        print("객체 생성 완료!")
-길동=person()
-길동.init("홍길동",20,"의적",160,15,40
-        ,"서울시 강남구","010-1234-1234")
+        self.color=color
+        self.channel=channel
+        print("Tv")
+    def power(self,power):
+        not power
+    def channelUp(self,channel):
+        channel+=1
+    def channeldown(self,channel):
+        channel-=1
+samsung=Tv()
+print(samsung.init("하얀색",2,"삼성Tv"))
 
-print(길동)
+lg=Tv()
+print(lg.init("하얀색",5,"lGTv"))
