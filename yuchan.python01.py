@@ -1,29 +1,30 @@
-#클래스(3)
-#class A:
-    #빈클래스
-    #기본생성자
-    #def _init_(self):
-        #print("A")
-    #pass
-#A()
-class Account:
-    def _init_(self,name,num,money,pw):
-        self.acc_name = name
-        self.acc_num = num
-        self.acc_balance = money
-        self.acc_pw = pw
-        print("계좌 등록ok")
-    def with1(self,money):
-        if money<=self.acc_balance:
-            self.acc_balance-=money
-            return money
-        else:
-            return "잔액부족"
-    def posit(self,money):
-        self.acc_balance+=money
-        print("입금액:",money)
+#클래스-생성자
+#기본 캐릭터
+class Character:
+    def __init__(self,id1="무명시",hp=0,mp=0):
+        self.id1=id1 #id
+        self.hp=hp   #체력
+        self.mp=mp   #마법력
+    def info(self):
+        print("id>",self.id1)
+        print("hp>", self.hp)
+        print("mp>", self.mp)
+    def at(self):
+        print("기본공격")
+#전사
+class Warrior(Character):
+    pass
+#마법사
+class Wizard(Character):
+    pass
+#궁수(화살)
+class Archer(Character):
+    pass
+class Monster(Character):
+    pass
+#전사
+w1=Warrior("전사")
+print(w1.at())
 
-영희=Account("영희계좌","1111",1000,1234)
-print(영희.acc_name)
-영희.posit(20000 )
-print("출금:",영희.with1(50000))
+m1=Monster("오크",100,100)
+print(m1.info())
