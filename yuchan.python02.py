@@ -1,14 +1,14 @@
 #자료형
-#사용자 입력 : input()
-string=input("인사말을 입력하세요>")
-print(string)
-#input()함수의 입력 자료형
-print(type(string))
-number=input("숫자를 입력하세요>")
-print(number)
-#input()함수의 입력 자료형
-print(type(number))
-#입력 자료형 확인하기
-string=input("입력>")
-print("자료 : ",string)
-print("자료형 : ",type(string))
+#문자열 구성 파악하기 : isOO()
+#isalnum() : 문자열이 알파벳 또는 숫자로만 구성되어 있는지 확인합니다
+#isalpha() : 문자열이 알파벳으로만 구성되어 있는지 화가인합니다
+#isidentifier() : 문자열이 식별자로 상용할 수 있는 것인지 확인합니다
+#isdecimal() : 문자열이 정수 형태인지 확인합니다
+#isdigit() : 문자열이 숫자로 인실될 수 있는 것인지 확인합니다
+#isspace() : 문자열이 공백으로만 구성되어 있는지 확인합니다
+#islower() : 문자열이 소문자로만 구성되어 있는지 확인합니다
+#isupper() : 문자열이 대문자로 구성되어 있는지 확인합니다
+
+#출력은 True(맞다) 또는 False(아니다)라고 나오는데 이를 불(boolean)이라고 부릅니다
+print("TrainA10".isalnum())
+print("10".isdigit())
