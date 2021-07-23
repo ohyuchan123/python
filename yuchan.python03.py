@@ -1,28 +1,28 @@
-#자료형
-#문자열을 숫자로 바꾸기
-'''
-int()함수: 문자열을 int 자료형으로 변환합니다. int는 정수를 의미합니다
-float()함수: 문자열을 float 자료형으로 변환합니다. float는 실수 또는 부동 소수점을 의미합니다
-'''
-string_a=input("입력A>")
-int_a=int(string_a)
+#조건문
+#불 연산하기 : 논리 연산자
+#not : 아니다
+#and : 그리고
+#or : 또는
 
-string_b=input("입려B>")
-int_b=int(string_b)
+#not 연산자
+#not 연산자는 단항 연산자로, 참과 거짓을 반대로 바꿀 때 사용합니다
+print(not True)
+print(not False)
 
-print("문자열 자료 :",string_a+string_b)
-print("숫자 자료 :",int_a+int_b)
-#int()함수와 float()함수 활용하기
-output_a=int("52")
-output_b=float("52.273")
+x=10
+under_20=x<20
+print("under_20",under_20)
+print("not under_20",not under_20)
 
-print(type(output_a),output_a)
-print(type(output_b),output_b)
-#int()함수와 float()함수 조합하기
-input_a=float(input("첫 번째 숫자>"))
-input_b=float(input("두 번째 숫자>"))
+#and 연산자와 or 연산자
+#and 연산자는 양쪽 변의 값이 모두 참일 때만 True를 결과로 냅니다
+# 반면 or 연산자는 둘 중 하나만 참이어도 True를 결고로 냅니다
+print(True and True)
+print(True and False)
+print(False and True)
+print(False and False)
+print(True or True)
+print(True or False)
+print(False or True)
+print(False or False)
 
-print("덧셈 결과:",input_a+input_b)
-print("뻴셈 결과:",input_a-input_b)
-print("곱셈 결과:",input_a*input_b)
-print("나눗셈 결과:",input_a/input_b)
