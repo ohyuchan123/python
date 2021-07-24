@@ -1,28 +1,13 @@
 #조건문
-#불 연산하기 : 논리 연산자
-#not : 아니다
-#and : 그리고
-#or : 또는
+#컴퓨터 조건
+#나머지 연산자를 활용해서 짝수와 홀수 구분
 
-#not 연산자
-#not 연산자는 단항 연산자로, 참과 거짓을 반대로 바꿀 때 사용합니다
-print(not True)
-print(not False)
+#입력을 받습니다
+number=int(input("정수 입력>"))
 
-x=10
-under_20=x<20
-print("under_20",under_20)
-print("not under_20",not under_20)
-
-#and 연산자와 or 연산자
-#and 연산자는 양쪽 변의 값이 모두 참일 때만 True를 결과로 냅니다
-# 반면 or 연산자는 둘 중 하나만 참이어도 True를 결고로 냅니다
-print(True and True)
-print(True and False)
-print(False and True)
-print(False and False)
-print(True or True)
-print(True or False)
-print(False or True)
-print(False or False)
-
+#짝수 조건
+if number%2==0:
+    print("짝수 입니다")
+#홀수 조건
+if number%2==1:
+    print("홀수 입니다")
