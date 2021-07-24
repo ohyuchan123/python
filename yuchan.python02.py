@@ -1,14 +1,24 @@
-#자료형
-#문자열 구성 파악하기 : isOO()
-#isalnum() : 문자열이 알파벳 또는 숫자로만 구성되어 있는지 확인합니다
-#isalpha() : 문자열이 알파벳으로만 구성되어 있는지 화가인합니다
-#isidentifier() : 문자열이 식별자로 상용할 수 있는 것인지 확인합니다
-#isdecimal() : 문자열이 정수 형태인지 확인합니다
-#isdigit() : 문자열이 숫자로 인실될 수 있는 것인지 확인합니다
-#isspace() : 문자열이 공백으로만 구성되어 있는지 확인합니다
-#islower() : 문자열이 소문자로만 구성되어 있는지 확인합니다
-#isupper() : 문자열이 대문자로 구성되어 있는지 확인합니다
+#조건문
+#컴퓨터의 조건
+#끝자리로 짝수와 홀수 구분
 
-#출력은 True(맞다) 또는 False(아니다)라고 나오는데 이를 불(boolean)이라고 부릅니다
-print("TrainA10".isalnum())
-print("10".isdigit())
+#입력을 받습니다
+number=input("정수 입력>")
+#마지막 자리 숫자를 추출
+last_character=number[-1]
+#숫자로 변환하기
+last_character=int(last_character)
+#짝수 확인
+if last_character==0\
+   or last_character==2\
+    or last_character==4\
+    or last_character==6\
+    or last_character==8:
+    print("짝수 입니다")
+# 홀수 확인
+if last_character == 1 \
+        or last_character == 3 \
+        or last_character == 5 \
+        or last_character == 7 \
+        or last_character == 9:
+        print("홀수 입니다")
