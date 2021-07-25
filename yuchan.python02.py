@@ -1,24 +1,32 @@
 #조건문
-#컴퓨터의 조건
-#끝자리로 짝수와 홀수 구분
+#elif 구문
+'''
+elif 구문은 if 조건문과 else 구문 사이에 입력하며, 다음과 같은 형태로 사용합니다.
 
-#입력을 받습니다
-number=input("정수 입력>")
-#마지막 자리 숫자를 추출
-last_character=number[-1]
-#숫자로 변환하기
-last_character=int(last_character)
-#짝수 확인
-if last_character==0\
-   or last_character==2\
-    or last_character==4\
-    or last_character==6\
-    or last_character==8:
-    print("짝수 입니다")
-# 홀수 확인
-if last_character == 1 \
-        or last_character == 3 \
-        or last_character == 5 \
-        or last_character == 7 \
-        or last_character == 9:
-        print("홀수 입니다")
+if 조건A:
+□ □ □ □ 조건 A가 참일때 실해할 문장
+elif 조건B:
+□ □ □ □ 조건 B가 참일때 실해할 문장
+elif 조건C:
+□ □ □ □ 조건 C가 참일때 실해할 문장
+...
+else :
+□ □ □ □ 모든 조건이 거짓일 떄 문장
+'''
+
+#계절 구하기
+#날짜/시간과 관련된 기능을 가져옵니다
+import datetime
+
+now=datetime.datetime.now()
+month=now.month
+
+#조건문으로 계절을 확인합니다
+if 3<=month<=5:
+    print("현재는 봄입니다")
+elif 6<=month<=8:
+    print("현재는 여름입니다")
+elif 9<=month<=11:
+    print("현재는 가을입니다")
+else:
+    print("현재는 겨울입니다")
