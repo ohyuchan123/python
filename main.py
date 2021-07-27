@@ -1,15 +1,23 @@
-#조건문
-#else 조건문의 활용
-'''
-else 구문은 if 조건문 뒤에 사용하며 if 조건문 뒤에 사용하며,
-if 조건문의 조건이 거짓일 떄 실행되는 부분입니다
-'''
-#짝수와 홀수 구분
-#입력을 받습니다.
-number=int(input("정수 입력>"))
+#반복문
+#리스트 연산자 : 연결(+),반복(*),len()
 
-#조건문을 사용합니다
-if number%2==0:
-    print("짝수 입니다")
-else:
-    print("홀수 입니다")
+#리스트를 선언합니다
+list_a=[1,2,3]
+list_b=[4,5,6]
+#출력합니다
+print("#리스트")
+print("list_a=",list_a)
+print("list_b=",list_b)
+print()
+#기본 연산자
+print("#리스트 기본 연산자")
+print("list_a+list_b=",list_a+list_b)
+print("list_a*3=",list_a*3)
+print()
+#함수
+'''
+len() 함수는 괄호 내부에 문자열을 넣으면 문자열의 글자 수(=길이)를 세어 주지만, 리스트 
+변수를 넣으면 요소의 개수를 세어 줍니다. 19행은  list_a에 들어있는 요소의 개수를 구합니다
+'''
+print("#길이 구하기")
+print("len(list_a)=",len(list_a))
