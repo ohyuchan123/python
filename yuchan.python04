@@ -1,28 +1,14 @@
-#조건문
-#조건문 활용 띠 구별
-birth_year=int(input("태어난 해를 역력해 주세요"))
+#반복문
+#get()함수
+dictionary={
+    "name":"7D 건조 망고",
+    "type":"당절임",
+    "ingredient":["망고","설탕","메타중아환산나트륨","치자황색소"],
+    "origin":"필리핀"
+}
 
-if birth_year%12==0:
-    print("원숭이 띠입니다.")
-elif birth_year%12==1:
-    print("닭 띠입니다")
-elif birth_year%12==2:
-    print("개 띠입니다")
-elif birth_year%12==3:
-    print("돼지 띠입니다")
-elif birth_year%12==4:
-    print("쥐 띠입니다")
-elif birth_year%12==5:
-    print("소 띠입니다")
-elif birth_year%12==6:
-    print("범 띠입니다")
-elif birth_year%12==7:
-    print("토끼 띠입니다")
-elif birth_year%12==8:
-    print("용 띠입니다")
-elif birth_year%12==9:
-    print("뱀 띠입니다")
-elif birth_year%12==10:
-    print("말 띠입니다")
-elif birth_year%12==11:
-    print("양 띠입니다")
+#존재하지 않는 키에 접근해 봅니다
+value=dictionary.get("존재하지 않는 키")
+print("값:",value)
+#None 확인 방법if value==None:
+print("존재하지 않는 키에 접근했었습니다.")
