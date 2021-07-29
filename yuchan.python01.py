@@ -1,16 +1,15 @@
 #반복문
-#리스트에 요소 추가하기 : append,insert
+#for문
 '''
-리스트명.append(요소)
-리스터명.insert(위치,요소)
+for 반복자 in 반복할 수 있는 것 :
+    코드
 '''
-list_a=[1,2,3]
+for i in range(100):
+    print("출력")
 
-print("#리스트 뒤에 요소 추가하기")
-list_a.append(4)
-list_a.append(5)
-print(list_a)
-print()
-print("#리스트 중간에 요소 추가하기")
-list_a.insert(0,10)
-print(list_a)
+#for 반복문과 리스트
+#리스트를 선언합니다
+array=[273,32,103,57,52]
+#리스트에 반복문을 적용합니다
+for element in array:
+    print(element)
