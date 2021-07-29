@@ -1,28 +1,26 @@
 #반복문
-#리스트에 요소 제거하기
-#인덱스로 제거하기 : del,pop
-list_a=[0,1,2,3,4,5]
-print("#리스트의 요소 하나 제거하기")
+#딕셔너리와 반복문
+#딕셔너리 선언하기
+'''
+딕셔너리는 중괄호{}로 선언하며, '키:값' 형태를 쉼표(,)로 연결해서 만듭니다. 키는 문자열,숫자,불 등으로 선언할 수 있습니다
+변수={
+    키:값
+    키:값
+    ...
+    키:값
+'''
+dict_a={
+    "name":"어밴져스 엔드게임",
+    "type":"히어로 무비"
+}
 
-#제거 방법[1]-del
-del list_a[1]
-print("del list_a[1] : ",list_a)
+print(dict_a)
+print(dict_a["name"])
+print(dict_a["type"])
 
-#제거 방법[2]-pop
-list_a.pop(2)
-print("pop(2) : ",list_a)
-
-#값으로 제거하기 :remove
-'''
-리스트.remove(값)
-'''
-list_c=[1,2,1,2]
-list_c.remove(2)
-print(list_c)
-#모두 제거하기 : clear
-'''
-리스트.clear()
-'''
-list_d=[0,1,2,3,4,5]
-list_d.clear()
-print(list_d)
+dict_b={
+    "director":["안소니 루소","조 루소"],
+    "cast":["아이언맨","타노스","토르","닥터스트레인지","헐크"]
+}
+print(dict_b)
+print(dict_b["director"])
