@@ -1,19 +1,16 @@
 #반복문
-#리스트 내부에 있는지 확인하기 : in/not in 연산자
-'''
-값 in list
-'''
-#in 연산자
-list_a=[273,32,103,57,52]
-print("in 연산자")
-print(273 in list_a)
-print(99 in list_a)
-print(100 in list_a)
-print(52 in list_a)
-print()
-#not in 연산자
-print("not in 연산자")
-print(273 not in list_a)
-print(99 not in list_a)
-print(100 not in list_a)
-print(52 not in list_a)
+#딕셔너리
+dictionary={
+    "name":"7D 건조 망고",
+    "type":"당절임",
+    "ingredient":["망고","설탕","메타중아환산나트륨","치자황색소"],
+    "origin":"필리핀"
+}
+print("name:",dictionary["name"])
+print("type:",dictionary["type"])
+print("ingredient:",dictionary["ingredient"])
+print("origin:",dictionary["origin"])
+
+#값을 변경합니다
+dictionary["name"]="8D 건조 망고"
+print("name:",dictionary["name"])
