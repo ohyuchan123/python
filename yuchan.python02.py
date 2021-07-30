@@ -1,16 +1,17 @@
 #반복문
-#딕셔너리
-dictionary={
-    "name":"7D 건조 망고",
-    "type":"당절임",
-    "ingredient":["망고","설탕","메타중아환산나트륨","치자황색소"],
-    "origin":"필리핀"
-}
-print("name:",dictionary["name"])
-print("type:",dictionary["type"])
-print("ingredient:",dictionary["ingredient"])
-print("origin:",dictionary["origin"])
+#for 반복문 : 리스트와 범위 조합하기
+array=[273,32,103,57,52]
+for element in array:
+    print(element)
 
-#값을 변경합니다
-dictionary["name"]="8D 건조 망고"
-print("name:",dictionary["name"])
+#리스트와 범위를 조합해서 사용하기
+array=[273,32,103,57,52]
+for i in range(len(array)):
+    print("{}번째 반복 : {}".format(i,array[i]))
+
+#for 반복문 : 반대로 반복하기
+for j in range(4,0-1,-1):
+    print("현재 반복 변수 : {}".format(j))
+#반대로 반복하기(2)
+for k in reversed(range(5)):
+    print("현재 반복 변수: {}".format(k))
