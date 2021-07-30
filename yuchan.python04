@@ -1,14 +1,14 @@
 #반복문
-#get()함수
-dictionary={
-    "name":"7D 건조 망고",
-    "type":"당절임",
-    "ingredient":["망고","설탕","메타중아환산나트륨","치자황색소"],
-    "origin":"필리핀"
-}
+#whlie 반복문
+'''
+while 불 표현식:
+    문장
+'''
+#while True:
+    #print(".", end="")
 
-#존재하지 않는 키에 접근해 봅니다
-value=dictionary.get("존재하지 않는 키")
-print("값:",value)
-#None 확인 방법if value==None:
-print("존재하지 않는 키에 접근했었습니다.")
+#while 반복문 : for 반복문처럼 사용하기
+i=0
+while i < 10:
+    print("{}번째 반복입니다.".format(i))
+    i+=1
