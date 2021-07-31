@@ -1,17 +1,11 @@
 #반복문
-#for 반복문 : 리스트와 범위 조합하기
-array=[273,32,103,57,52]
-for element in array:
-    print(element)
-
-#리스트와 범위를 조합해서 사용하기
-array=[273,32,103,57,52]
-for i in range(len(array)):
-    print("{}번째 반복 : {}".format(i,array[i]))
-
-#for 반복문 : 반대로 반복하기
-for j in range(4,0-1,-1):
-    print("현재 반복 변수 : {}".format(j))
-#반대로 반복하기(2)
-for k in reversed(range(5)):
-    print("현재 반복 변수: {}".format(k))
+#리스트에 적용할 수 있는 기본 함수 : min(),max(),sum()
+'''
+min() : 리스트 내부에서 최솟값을 찾습니다
+max() : 리스트 내부에서 최댓값을 찾습니다
+sum() : 리스트 내부에서 값을 모두 더합니다
+'''
+number=[103,52,273,32,77]
+print("최솟값 : ",min(number))
+print("최댓값 : ",max(number))
+print("합 : ",sum(number))
