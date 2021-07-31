@@ -1,16 +1,24 @@
 #반복문
-#범위
-a=range(5)
-print(a)
-print(list(range(10)))
-print(list(range(0,5))) #0부터 (5-1)까지의 정수로 범위를 만듭니다
-print(list(range(0,10,2))) #0부터 2씩 증가하면서 (10-1_까지의 정수로 범위를 만듭니다
+#while 반복문을 for 반복문처럼 사용하기
+i=0
+while i<10:
+    print("{}번째 반복입니다.".format(i))
+    i+=1
 
-a=range(10+1)
-print(list(a))
+# while 반복문 : 상태를 기반으로 반복하기
+list_test=[1,2,1,2]
+value=2
 
-n=10
-a=range(0,int(n/2))#->실수를 정수로 바꾸는 방법보다
-print(list(a))
-a=range(0,n//2)#->정수 나누기 연산자를 많이 사용합니다
-print(list(a))
+while value in list_test:
+    list_test.remove(value)
+print(list_test)
+
+#while 반복문 : 시간을 기반으로 반복하기
+#5초 동안 반복하기
+import time
+
+number=0
+target_tick=time.time()+5
+while time.time()<target_tick:
+    number+=1
+print("5초 동안 {}번 반복했습니다.".format(number))
