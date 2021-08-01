@@ -1,30 +1,66 @@
 #반복문
-#enumerate() 함수와 반복문 조합하기
+#별찍기
 '''
-example_list=["요소A","요소B","요소C"]
+    *
+   ***
+  *****
+ *******
+*********
+*********
+ *******
+  *****
+   ***
+    *
 '''
-#방법(1)
-'''
-example_list=["요소A","요소B","요소C"]
-i=0
-for item in example_list:
-    print("{}번째 요소는{}입니다.".format(i,item))
-    i+=1
-'''
-#방법(2)
-'''
-example_list=["요소A","요소B","요소C"]
-for i in range(len(example_list)):
-    print("{}번째 요소는 {}입니다".format(i,example_list[i])
-'''
-example_list=["요소A","요소B","요소C"]
-print("#단순 출력")
-print(example_list)
+#간단한 코드
+for i in range(1, 11, 2):
+    print('{:^10}'.format('*' * i))
+for i in range(9, 0, -2):
+    print('{:^10}'.format('*' * i))
 print()
-
-print("#enumerate() 함수 적용 출력")
-print(enumerate(example_list))
+#일반 코드
+for i in range(1,6):
+    for j in range(5-i):
+        print(' ',end="")
+    for j in range(1,i*2,1):
+        print('*',end="")
+    print('')
+for i in range(5):
+    for j in range(i):
+         print(' ', end="")
+    for j in range(10, 1 + i * 2, -1):
+        print('*', end="")
+    print('')
 print()
-
-print("#list() 함수로 강제 변환 출력")
-print(list(enumerate(example_list)))
+'''
+*********
+ *******
+  *****
+   ***
+    *
+    *
+   ***
+  *****
+ *******
+*********
+'''
+#간단한 코드
+for i in range(9, 0, -2):
+    print('{:^10}'.format('*' * i))
+for i in range(3, 11, 2):
+    print('{:^10}'.format('*' * i))
+print()
+#일반 코드
+for i in range(5):
+    for j in range(i):
+         print(' ', end="")
+    for j in range(10, 1 + i * 2, -1):
+        print('*', end="")
+    print('')
+for i in range(1,6):
+    for j in range(5-i):
+        print(' ',end="")
+    for j in range(1,i*2,1):
+        print('*',end="")
+    print('')
+print()
