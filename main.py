@@ -1,17 +1,28 @@
-#반복문
-#리스트 내포
-#반복문을 사용한 리스트 생성
-array=[]
+#함수
+#가변 매개변수
+'''
+def 함수이름(매개변수,매개변수,...,*가변 매개변수):
+    문장
+'''
 
-for i in range(0,20,2):
-    array.append(i*i)
-print(array)
+#가변 매개변수 함수
+def print_n_times(n,*values):
+    for i in range(n):
+        for value in values:
+            print(value)
+        print()
 
-#리스트 안에 for문 사용학기
-array=[i*i for i in range(0,20,2)]
-print(array)
+#함수 호출
+print_n_times(3,"안녕하세요","즐거운","파이썬 프로그래밍")
 
-#조건을 활용한 리스트 내포
-array=["사과","자두","초콜릿","바나나","체리"]
-output=[fruit for fruit in array if fruit!="초콜릿"]
-print(output)
+#기본 매개변수
+'''
+print(value,...,sep=' ',end='\n',file=sys.stdout,flush=False)
+'''
+#기본 매개변수
+def print_n_times(value,n=2):
+    for i in range(n):
+        print(value)
+
+#함수 호출
+print_n_times("안녕하세요")
