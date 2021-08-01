@@ -1,20 +1,17 @@
 #반복문
-#while 반복문 : break 키워드/continue 키워드
-i=0
-while True:
-    print("{}번째 반복문입니다.".format(i))
-    i+=1
-    input_text=input(">종료하시겠습니까?(y/n) : ")
-    if input_text in["y","Y"]:
-        print("반복을 종료합니다.")
-        break
-    elif input_text in["n","N"]:
-        print("반복을 계속합니다")
+#리스트 내포
+#반복문을 사용한 리스트 생성
+array=[]
 
-#continue 키워드
-numbers=[5,15,6,20,7,25]
+for i in range(0,20,2):
+    array.append(i*i)
+print(array)
 
-for number in numbers:
-    if number<10:
-        continue
-    print(number)
+#리스트 안에 for문 사용학기
+array=[i*i for i in range(0,20,2)]
+print(array)
+
+#조건을 활용한 리스트 내포
+array=["사과","자두","초콜릿","바나나","체리"]
+output=[fruit for fruit in array if fruit!="초콜릿"]
+print(output)
