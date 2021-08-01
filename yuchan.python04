@@ -1,19 +1,37 @@
 #반복문
-#reversed() 함수로 리스트 뒤집기
+#별찍기
 '''
-리스트에서 요소의 순서를 뒤집고 싶을 때는 reversed() 함수를 사용합니다. reversed()
-함수의 매개변수에 리스트를 넣으면 리스트를 뒤집을 수 있습니다
+    *
+   ***
+  *****
+ *******
+*********
 '''
-list_a=[1,2,3,4,5]
-list_reversed=reversed(list_a)
-
-print("#reversed() 함수")
-print("reversed([1,2,3,4,5]):",list_reversed)
-print("list(reversed([1,2,3,4,5]):",list(list_reversed))
+#간단한 코드
+for i in range(1,11,2):
+    print('{:^10}'.format('*'*i))
+#일반 코드
+for i in range(1,6):
+    for j in range(5-i):
+        print(' ',end="")
+    for j in range(1,i*2,1):
+        print('*',end="")
+    print('')
 print()
-
-#반복문을 적용
-print("#reversed() 함수와 반복문")
-print("for i in reversed([1,2,3,4,5]):")
-for i in reversed(list_a):
-    print("-",i)
+'''
+*********
+ *******
+  *****
+   ***
+    *
+'''
+#간단한 코드
+for i in range(9, 0, -2):
+    print('{:^10}'.format('*' * i))
+#일반 코드
+for i in range(5):
+    for j in range(i):
+        print(' ',end="")
+    for j in range(10,1+i*2,-1):
+        print('*',end="")
+    print('')
