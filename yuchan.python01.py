@@ -1,14 +1,19 @@
-#반복문
-#딕셔너리의 items() 함수와 반복문 조합하기
-example_dictionay={
-    "키A" : "값A",
-    "키B" : "값B",
-    "키C" : "값C",
-}
-print("#딕셔너리의 items() 함수")
-print("items() : ",example_dictionay.items())
-print()
+#함수
+#함수의 기본
+'''
+def 함수 이름():
+    문장
+'''
+def print_3_times():
+    print("안녕하세요")
+    print("안녕하세요")
+    print("안녕하세요")
+print_3_times()
 
-print("#딕셔너리의 items() 함수와 반복문 조합하기")
-for key, element in example_dictionay.items():
-    print("dictionay[{}]={}".format(key,element))
+print()
+#매개변수의 기본
+def print_n_times(value,n):
+    for i in range(n):
+        print(value)
+
+print_n_times("안녕하세요",5)
