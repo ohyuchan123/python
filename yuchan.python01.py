@@ -1,19 +1,22 @@
 #함수
-#함수의 기본
+#재귀 함수
 '''
-def 함수 이름():
-    문장
+팩토리얼(factorial)
+n!=n*(n-1)*(n-2)*...*1
 '''
-def print_3_times():
-    print("안녕하세요")
-    print("안녕하세요")
-    print("안녕하세요")
-print_3_times()
+#반복문으로 팩토리얼 구하기
+def factorial(n):
+    output=1
+    for i in range(1,n+1):
+        output*=i
+    return output
 
-print()
-#매개변수의 기본
-def print_n_times(value,n):
-    for i in range(n):
-        print(value)
+#함수 호출
+print("1! : ",factorial(1))
+print("2! : ",factorial(2))
+print("3! : ",factorial(3))
+print("4! : ",factorial(4))
+print("5! : ",factorial(5))
 
-print_n_times("안녕하세요",5)
+
+
