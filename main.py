@@ -1,14 +1,17 @@
 #함수
-#재귀 함수를 사용해 팩토리얼 구하기
-def factorial(n):
-    if n==0:
-        return 1
-    else:
-        return n*factorial(n-1)
+#람다
+'''
+프로그래밍 언어에서는 함수라는 기능을 매개변수로 전달하는 코드를 많이
+사용합니다 그리고 이런 코드를 조금 더 효율적으로 작성할 수 있도록 파이썬은
+람다(lambda)라는 기능을 제공합니다
+'''
+def call_10_times(func):
+    for i in range(10):
+        func()
 
-#함수 호출
-print("1! : ",factorial(1))
-print("2! : ",factorial(2))
-print("3! : ",factorial(3))
-print("4! : ",factorial(4))
-print("5! : ",factorial(5))
+def print_hello():
+    print("안녕하세요")
+
+call_10_times(print_hello)
+
+
