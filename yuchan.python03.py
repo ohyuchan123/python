@@ -1,32 +1,18 @@
 #함수
-#기본적인 함수의 활용
+#함수 고급
+#튜플
 '''
-def 함수(매개변수):
-    변수=초깃값
-    #여러 가지 처리
-    #여러 가지 처리
-    #여러 가지 처리
-    return 변수
+튜플(tuple)은 리스트와 비슷한 자료형입니다. 리스트와 다른 점은 한번 결정된 요소를 바꿀 수 없다는
+것입니다
+(데이터,데이터,데이터,...)
 '''
-#범위 내부의 정수를 모두 더하는 함수
-def sum_all(start,end):
-    output=0
-    for i in range(start,end+1):
-        output+=i
-    return output
+#괄호 없는 튜플
+[a,b]=[10,20]
+(c,d)=[10,20]
 
-print("0 to 100 : ",sum_all(0,100))
-print("0 to 1000 : ",sum_all(0,1000))
-print("50 to 100 : ",sum_all(50,100))
-print("500 to 1000 : ",sum_all(500,1000))
+#출력
+print("a : ",a)
+print("b : ",b)
+print("c : ",c)
+print("d : ",d)
 
-#기본 매개변수와 키워드 매개변수를 활용해 범위의 정수를 더하는 함수
-def sum_all(start=0,end=100,step=1):
-    output=0
-    for i in range(start,end+1,step):
-        output+=i
-    return output
-
-print("A.",sum_all(0,100,10))
-print("B.",sum_all(end=100))
-print("C.",sum_all(end=100,step=2))
