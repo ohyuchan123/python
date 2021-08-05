@@ -1,17 +1,18 @@
 #함수
-#람다
-'''
-프로그래밍 언어에서는 함수라는 기능을 매개변수로 전달하는 코드를 많이
-사용합니다 그리고 이런 코드를 조금 더 효율적으로 작성할 수 있도록 파이썬은
-람다(lambda)라는 기능을 제공합니다
-'''
-def call_10_times(func):
-    for i in range(10):
-        func()
+#텍스트 한 줄씩 읽기
 
-def print_hello():
-    print("안녕하세요")
-
-call_10_times(print_hello)
+#랜덤한 숫자를 만들기 위해 가져옵니다.
+import random
+#간단한 한글 리스트를 만듭니다
+hanguls=list("가나다라마바사아자차카타파하")
+#파일을 쓰기 모드로 엽니다.
+with open("info.txt","w") as file:
+    for i in range(1000):
+        #랜덤한 값으로 변수를 생성합니다
+        name=random.choice(hanguls)+random.choice(hanguls)
+        weigh = random.randrange(40,100)
+        height=random.randrange(140,200)
+        #텍스트를 씁니다
+        file.write("{},{},{}\n".format(name,weigh,height))
 
 
