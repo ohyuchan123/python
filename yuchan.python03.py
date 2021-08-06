@@ -1,15 +1,19 @@
-#예외 처리
-#오류의 종류
+#sys 모듈
 '''
-프로그래밍 언어은 오류(error)에는 크게 두 가지 종류가 있습니다
-구문오류 : 프로그램 실행 전에 발생하는 오류
-예외 or 런타임 오류 : 프로그램 실행 중에 발생하는 오류
-두가지 모두 '오류' 라고 부릅니다 실행 전에 발생하는 오류를 구문오류(syntax error)라고 부르며
-프로그램 실행 중에 발생하는 오류를 예외(exception) 도는 런타임 오류(runtime error)라고 구분합니다
+sys 모듈은 시스템과 관련된 정보를 가지고 있는 모듈입니다.
 '''
-#구문오류
-print("# 프로그램이 시작되었습니다")
-print("예외를 강제로 발생시켜 볼게요!)
+import sys
 
+#명령 매개변수를 출력합니다
+print(sys.argv)
+print("---")
 
+#컴퓨터 환경과 관련된 정보를 출ㄹ력합니다
+print("getwindowsversion : ()",sys.getwindowsversion())
+print("---")
+print("copyright : ",sys.copyright)
+print("---")
+print("version : ",sys.version)
 
+#프로그램을 강제로 종료합니다
+sys.exit()
