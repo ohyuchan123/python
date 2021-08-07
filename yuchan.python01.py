@@ -1,13 +1,22 @@
 #모듈
-#모듈 사용의 기본 : math 모듈
+#os 모듈
 '''
-math 모듈은 이름 그대로 수학과 관련된 기능을 가지고 ㅣㅆ습니다
-import math
+os모듈은 운영체제와 관련된 기능을 가진 모듈입니다 새로운 폴더를 만들거나 폴더 내부의 파일 목록을 보는
+일도 모두 os 모듈을 활용해서 처리합니다
 '''
-import math
+import os
 
-print(math.sin(1)) #사인
-print(math.cos(1)) #코사인
-print(math.tan(1)) #탄젠트
-print(math.floor(2.5)) #내림
-print(math.ceil(2.5)) #올림
+print("현재 운영체제 : ", os.name)
+print("현재 폴더 : ",os.getcwd())
+print("현재 폴더 내부의 요소 : ",os.listdir())
+
+os.mkdir("hello")
+os.rmdir("hello")
+
+with open("original.txt","w")as file:
+    file.write("hello")
+os.rename("original.txt","new.txt")
+
+os.remove("new.txt")
+
+os.system("dir")
