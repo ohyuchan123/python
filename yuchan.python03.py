@@ -1,19 +1,11 @@
-#sys 모듈
+#모듈
+#urllib 모듈
 '''
-sys 모듈은 시스템과 관련된 정보를 가지고 있는 모듈입니다.
+urllib모듈은 URL을 다루는 라이브러리라는 의미 입니다
 '''
-import sys
+from urllib import request
 
-#명령 매개변수를 출력합니다
-print(sys.argv)
-print("---")
+target=request.urlopen("https://google.com")
+output=target.read()
 
-#컴퓨터 환경과 관련된 정보를 출ㄹ력합니다
-print("getwindowsversion : ()",sys.getwindowsversion())
-print("---")
-print("copyright : ",sys.copyright)
-print("---")
-print("version : ",sys.version)
-
-#프로그램을 강제로 종료합니다
-sys.exit()
+print(output)
