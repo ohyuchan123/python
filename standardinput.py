@@ -1,0 +1,6 @@
+print("Python","Java")
+print("Python"+"Java")
+print("Python","Java",sep=",")
+print("Python","Java","javascript",sep=" vs ")
+print("Python","Java",sep=",",end="?")
+print("무엇이 더 재미있을까요?")
